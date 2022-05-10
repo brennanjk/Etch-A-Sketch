@@ -24,3 +24,9 @@ gridbox.forEach(function(item) {
         item.classList.add('active-box');
     });
 });
+
+function changeGrid(gridnumber) {
+    row_count = gridnumber;
+    column_count = gridnumber;
+    createGrid();
+}
