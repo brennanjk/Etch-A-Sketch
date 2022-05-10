@@ -16,3 +16,11 @@ function createGrid() {
     }
 }
 createGrid();
+
+const gridbox = document.querySelectorAll('.gridbox');
+
+gridbox.forEach(function(item) {
+    item.addEventListener('mouseover', () => {
+        item.classList.add('active-box');
+    });
+});
