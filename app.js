@@ -25,17 +25,24 @@ gridbox.forEach(function(item) {
     });
 });
 
-// currently this is appending a new grid to the default grid - need to work out logic to REPLACE the default grid
+
 function changeGrid() {
 
     let gridNumber = Number(prompt("Enter a number for the new Grid: "));
+    console.log(gridNumber)
+    while (isNaN(gridNumber)) {
+        gridNumber = Number(prompt("Invalid entry! Enter a number: "));
+    };
+
     row_count = gridNumber;
     column_count = gridNumber;
     
+    //clears out current grid
     while(gridcontainer.firstChild) {
         gridcontainer.removeChild(gridcontainer.firstChild);
     }
 
+    //builds new grid based off user input
     createGrid();
 }
 
