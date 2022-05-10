@@ -44,5 +44,13 @@ function changeGrid() {
 
     //builds new grid based off user input
     createGrid();
+
+    const gridbox = document.querySelectorAll('.gridbox');
+
+    gridbox.forEach(function(item) {
+        item.addEventListener('mouseover', () => {
+            item.classList.add('active-box');
+        });
+    });
 }
 
