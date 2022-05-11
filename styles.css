@@ -19,6 +19,7 @@ body {
     height: 850px;
     border: 30px solid rgb(187, 0, 0);
     border-radius: 10px;
+    background-color: darkgray;
 }
 
 .row {
@@ -32,5 +33,5 @@ body {
 }
 
 .active-box {
-    background-color: darkgray;
+    background-color: rgb(36, 33, 33);
 }
