@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     background-color: blanchedalmond;
 }
 
@@ -11,6 +12,21 @@ body {
     font-size: 5em;
     font-family: 'Marck Script', cursive;
 }
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8.5em;
+    gap: 3em;
+}
+
+#button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 .button {
     font-family: 'VT323', monospace;
