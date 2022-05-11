@@ -6,6 +6,11 @@ body {
     align-items: center;
 }
 
+.header {
+    font-size: 5em;
+    font-family: 'Marck Script', cursive;
+}
+
 .grid-container {
     display: flex;
     flex-direction: column;
