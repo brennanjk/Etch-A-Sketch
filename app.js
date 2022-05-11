@@ -40,7 +40,7 @@ function changeGrid() {
     let gridNumber = Number(prompt("Enter a number for the new Grid (100 or less): "));
     
     while (isNaN(gridNumber) || (gridNumber > 100)) {
-        gridNumber = Number(prompt("Invalid entry! You must enter a number, and it must be below 100: "));
+        gridNumber = Number(prompt("Invalid entry! You must enter a number, and it must between 1 and 100: "));
     };
 
     row_count = gridNumber;
