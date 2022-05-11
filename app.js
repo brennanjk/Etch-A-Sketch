@@ -25,6 +25,15 @@ gridbox.forEach(function(item) {
     });
 });
 
+function resetGrid() {
+    gridbox.forEach(function(item) {
+        item.classList.remove('active-box');
+    });
+}
+
+const reset = document.querySelector("#reset");
+
+reset.addEventListener('click', resetGrid);
 
 function changeGrid() {
 
@@ -52,8 +61,19 @@ function changeGrid() {
             item.classList.add('active-box');
         });
     });
+    
+    //redefining the reset button within this function so reset still works after change grid is ran
+    function resetGrid() {
+        gridbox.forEach(function(item) {
+            item.classList.remove('active-box');
+        });
+    }
+    const reset = document.querySelector("#reset");
+
+    reset.addEventListener('click', resetGrid);
 }
 
 const button = document.querySelector(".button");
 
 button.addEventListener('click', changeGrid);
+

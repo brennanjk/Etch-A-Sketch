@@ -4,11 +4,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: blanchedalmond;
 }
 
 .header {
     font-size: 5em;
     font-family: 'Marck Script', cursive;
+}
+
+.button {
+    font-family: 'VT323', monospace;
+    font-size: 200%;
+    width: 3em;
+    height: 3em;
+    border-radius: 100px;
+    padding: 10px;
 }
 
 .grid-container {
