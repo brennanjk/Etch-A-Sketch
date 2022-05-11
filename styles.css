@@ -23,6 +23,7 @@ body {
 
 #button-box {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     gap: 10px;
 }
@@ -30,13 +31,16 @@ body {
 
 .button {
     font-family: 'VT323', monospace;
-    font-size: 200%;
+    font-size: 30px;
     width: 3em;
     height: 3em;
     border: 5px solid rgb(51, 51, 51);
     border-radius: 100px;
     padding: 15px;
     background-color: rgb(255, 251, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container {
@@ -73,6 +77,11 @@ body {
         height: 420px;
     }
     #container {
-        gap: 2.5em;
+        gap: 2.3em;
+    }
+    .button {
+        width: 2.9em;
+        font-size: 20px;
+        
     }
 }
