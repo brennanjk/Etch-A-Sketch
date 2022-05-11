@@ -63,3 +63,16 @@ body {
 .active-box {
     background-color: rgb(36, 33, 33);
 }
+
+@media (max-width: 900px) {
+    .header {
+        font-size: 3.5em;
+    }    
+    .grid-container {
+        width: 420px;
+        height: 420px;
+    }
+    #container {
+        gap: 2.5em;
+    }
+}
